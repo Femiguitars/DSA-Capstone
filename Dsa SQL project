@@ -1,5 +1,2 @@
-create database Dsa_Project
-...
-select*from [dbo].[KMS Sql Case Study];
-select*from [dbo].[Order_Status]
-...
+📁 Files: KMS Sql Case Study.csv, 
+Order_Status.csv
