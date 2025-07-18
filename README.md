@@ -1,7 +1,21 @@
-First thing was to input the two given csv files
+# 📊 Kultra Mega Stores (KMS) - SQL Business Intelligence Project
+
+## 🏢 Company Overview
+**Kultra Mega Stores (KMS)** is a leading supplier of office essentials and furniture headquartered in **Lagos, Nigeria**. With a diverse customer base that includes:
+- **Individual consumers**
+- **Retail clients (small businesses)**
+- **Corporate clients (wholesale buyers)**
+
+KMS serves a wide market across **Lagos**, with expanding operations in other regions, including **Abuja**.
+
+## 📌 Project Background
+As a **Business Intelligence Analyst**, I was engaged to support the **Abuja division** of KMS. The **Business Manager** provided a dataset containing order information from **2009 to 2012**, with the goal of analyzing the data and extracting actionable insights to support strategic business decisions.
 
 📁 Files: KMS Sql Case Study.csv, Order_Status.csv
+This project leverages SQL techniques and problem-solving methods from the DSA Data Analysis curriculum to address real-world business scenarios.
 
+---
+_____________________________________________________________________________________________________
 ```
 create database MY_Dsa_Project
 SELECT * FROM [dbo].[KMS Sql Case Study];
@@ -17,6 +31,8 @@ FROM [dbo].[KMS Sql Case Study]
 GROUP BY Product_Category
 ORDER BY [Total Sales] DESC;
 ```
+Findings: Technology has the highest sales, totalling approximately $59.8 million. It was followed by furniture with about $51.8 million, and Office supplied with approxiamately $37.5 million
+________________________________________________________________________________________________________
 #### 2. Top and bottom 3 region in sales
 ```
 SELECT TOP 3 
@@ -33,7 +49,16 @@ FROM [dbo].[KMS Sql Case Study]
 GROUP BY Region
 ORDER BY [Total Sales] ASC;
 ```
-
+Findings:
+Top 3 Regions: 
+West - $35.96M
+Ontario - $30.63M
+Prairie_ $28.37M
+Bottom 3 Regions:
+Nunavut - $1.16M
+Northwest Territories - $800.8k
+Yukon - $975.9k
+_________________________________________________________________________________________________________
 #### 3. What were the total sales of appliances in Ontario?
 ```
 SELECT 
@@ -43,6 +68,8 @@ WHERE
     Product_sub_Category = 'Appliances'
     AND Province = 'Ontario';
 ```
+Finding:
+The total sales of appliances in Ontario amounted ro $202,346.84
 
 #### 4. Advise the management of KMS on what to do to increase the revenue from the bottom 
 10 customers
