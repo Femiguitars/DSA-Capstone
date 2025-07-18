@@ -1,4 +1,4 @@
-#Kultra Mega Stores (KMS) - SQL Business Intelligence Project
+Kultra Mega Stores (KMS) - SQL Business Intelligence Project
 
 ## Company Overview
 **Kultra Mega Stores (KMS)** is a leading supplier of office essentials and furniture headquartered in **Lagos, Nigeria**. With a diverse customer base that includes:
